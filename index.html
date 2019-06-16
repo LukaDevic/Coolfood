@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
       rel="stylesheet"
@@ -16,13 +20,18 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="sticky">
         <div class="row">
           <img
             src="resources/img/logo-white.png"
             alt="Coolfood logo"
             class="logo"
           />
+          <img
+          src="resources/img/logo.png"
+          alt="Coolfood logo"
+          class="logo-black"
+        />
           <ul class="main-nav">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works</a></li>
@@ -496,8 +505,42 @@
         </form>
       </div>
     </section>
-  </body>
+
+
+    <footer>
+       <div class="row">
+         <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                 <li><a href="#">About use</a></li>
+                 <li><a href="#">Blog</a></li>
+                 <li><a href="#">Press</a></li>
+                 <li><a href="#">iOS App</a></li>
+                 <li><a href="#">Android App</a></li>
+               </ul>
+         </div>
+         <div class="col span-1-of-2">
+             <ul class="social-links">
+               <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></ion-icon></li>
+               <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
+               <li><a href="#"><ion-icon name="logo-googleplus" class="logo-googleplus"></ion-icon></a></li>
+               <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+             </ul>
+          </div>
+       </div>
+       <div class="row">
+         <p>
+           Copyright &copy; 2015 by Omnifood. All rights reserved.
+         </p>
+       </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <script src="resources/js/script.js"></script>
+  </body>
+  
 </html>
 
 
